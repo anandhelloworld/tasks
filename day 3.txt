@@ -1,0 +1,93 @@
+
+1.)json iterations(for forin forof forEach)
+ 
+  // for:
+    it is used to iterate arrays only.
+    syntax: for(intialization; condition;udatation){ statements}
+    eg: arr=[1,2,3,4,54,566,5]
+       for(let i =0; i<arr.length; i++)
+       { console.log(arr[i]) }
+       // output: [1,2,3,4,5,54,566,5]
+//for in:
+ for in is used for objects as for loop cannot be used in 
+ objects as objects are not order list.
+ we use for in  to iterate over objects
+
+ syntax: for(const key in object){ statements}
+ eg:
+ const obj ={name:guvi, age: 21};
+ for(const key in obj){console.log(obj[key])}// will give all value of key(obj[key] is syntax for value of key in object) ie : guvi 
+                                                                        20
+for in always give key value or index (in case of arrays)
+eg:for(const key in arr){console.log(key+" " +arr[key]))}
+ output 0 1
+        1 2
+        2 3 
+        3 4
+        4 5 
+        5 54
+        6 566
+        7 5
+
+//for of:
+ it is used to iterate over values 
+ for(let value of obj){console.log(value)};
+ ouput: error as obj for of cannnot be used, since value is not key in obj it has its own key
+
+ for(let value of arr){console.log(value)}
+ //output: 1
+           2
+           3 
+           4
+           5 
+           54
+           566
+           5 
+
+// forEach:
+
+The forEach() method calls a function for each element in an array.
+
+syntax:array.forEach(function(currentValue, index, arr), thisValue)
+eg:
+   const fruits = ["apple", "orange", "cherry"];
+   fruits.forEach(myFunction(item,index){console.log(index + ": " + item )});
+    output:0: apple
+           1: orange
+           2: cherry
+
+
+
+
+
+
+
+
+
+
+2.)	RESUME IN JSON:
+“const’ “ reusume” ={
+                “name “: “ANAND MOHAN BABU”
+                “email” : “anandmohanbabu1998@gmail.com”
+                "phone No:": "9561924155"
+                 "address" :{
+                     "city":"simrol"
+                     "district": "Indore"
+                     "state"  : "Madhya Pradesh"
+                     }
+                "education": [{"degree": "Btech" 
+                              "branch" : " CIVIL "
+                              "CGPA" : "6.75"
+                              "durations": " 2017-2021"
+                                                                                    
+                               }
+                               {
+                                   "degree": "highschool"
+                                   "percentage": "92"
+                                   "durations": "2014-2016"
+                               }]                          
+
+                             }
+                    "skills":["C++","C","HTML","CSS"]
+                    }
+
